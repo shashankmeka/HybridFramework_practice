@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Test all classes">
+<test name="combine testing">
+
+    <classes> 
+    				
+    												<!-- parallel execution (package name dot class name) -->
+    <class name = "Annotation.demo1" /> 			<!-- write this in between two classes -->
+    <class name = "Annotation.anotations" /> 		<!--  -->
+    <class name = "Annotation.anotations1" /> 
+        
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

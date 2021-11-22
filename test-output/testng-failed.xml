@@ -3,14 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Annotation.anotations1">
+      <class name="Annotation.parameterization">
         <methods>
-          <include name="freecrmlogin"/>
-          <include name="close"/>
-          <include name="afterlogin"/>
-          <include name="setup"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- Annotation.anotations1 -->
+      </class> <!-- Annotation.parameterization -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
