@@ -2,33 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-11-22T19:01:47 IST" name="parameterization feature" finished-at="2021-11-22T19:02:49 IST" duration-ms="61968">
+  <suite started-at="2021-11-23T12:35:21 IST" name="Default suite" finished-at="2021-11-23T12:35:30 IST" duration-ms="9137">
     <groups>
     </groups>
-    <test started-at="2021-11-22T19:01:47 IST" name="we can pass multiple parameters through this " finished-at="2021-11-22T19:02:49 IST" duration-ms="61968">
-      <class name="Annotation.parameterization">
-        <test-method signature="login(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Annotation.parameterization@2473d930]" started-at="2021-11-22T19:01:47 IST" name="login" finished-at="2021-11-22T19:02:49 IST" duration-ms="61912" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://opensource-demo.orangehrmlive.com/]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[admin@123]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2021-11-23T12:35:21 IST" name="Default test" finished-at="2021-11-23T12:35:30 IST" duration-ms="9137">
+      <class name="Testlayer.demo">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testlayer.demo@7a69b07]" started-at="2021-11-23T12:35:21 IST" name="setup" finished-at="2021-11-23T12:35:24 IST" duration-ms="3710" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-      </class> <!-- Annotation.parameterization -->
-    </test> <!-- we can pass multiple parameters through this  -->
-  </suite> <!-- parameterization feature -->
+        </test-method> <!-- setup -->
+        <test-method signature="m1()[pri:0, instance:Testlayer.demo@7a69b07]" started-at="2021-11-23T12:35:24 IST" name="m1" finished-at="2021-11-23T12:35:30 IST" duration-ms="5348" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m1 -->
+      </class> <!-- Testlayer.demo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -6,12 +6,12 @@ import org.testng.annotations.Test;
 
 public class demo1 {
 	
-	@Test //2
+	@Test (enabled =true) //2
 	public void test() {
 		System.out.println("test ");
 	}
 	
-	@Test// 5
+	@Test(alwaysRun = false)// 5
 	public void test1() {
 		System.out.println("test 1 ");
 	}

@@ -7,9 +7,7 @@
 	<parameter name="username" value="Admin"/>
 	<parameter name="password" value="admin@123"/>
 	
-	
     <classes>
-    
      	<class name= "Annotation.parameterization"/>
      	
     </classes>
