@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Annotation.anotations1">
+      <class name="Testlayer.testlog">
         <methods>
-          <include name="test1"/>
-          <include name="test2"/>
+          <include name="teardown"/>
+          <include name="loginfunction"/>
+          <include name="m1"/>
         </methods>
-      </class> <!-- Annotation.anotations1 -->
+      </class> <!-- Testlayer.testlog -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
