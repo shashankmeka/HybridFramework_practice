@@ -8,6 +8,8 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class baseclass {
 	
@@ -35,16 +37,34 @@ public class baseclass {
 	}
 		
 	public static void setup() {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\admin\\eclipse-workspace\\javaprogram\\driver\\chromedriver.exe");
-		driver = new ChromeDriver();
+		
+		
+		String browsername=prop.getProperty("browser");
+		
+		if (browsername.equalsIgnoreCase("chrome")) {
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\admin\\eclipse-workspace\\javaprogram\\driver\\chromedriver1.exe");
+			driver = new ChromeDriver();	
+		}
+		else if(browsername.equalsIgnoreCase("morzila")) {
+			
+			System.setProperty("webdriver.firefox.driver", "C:\\Users\\admin\\eclipse-workspace\\javaprogram\\driver\\geckodriver.exe");
+			driver= new FirefoxDriver();
+			
+		}
+		else if(browsername.equalsIgnoreCase("edge")) {
+			System.setProperty("webdriver.edge.driver", "C:\\Users\\admin\\eclipse-workspace\\javaprogram\\driver\\msedgedriver.exe");
+			driver=new EdgeDriver();
+		}
 		
 		//driver.manage().window().maximize();
 		
 		driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 		driver.manage().deleteAllCookies();
-		
+				
 		driver.get(prop.getProperty("url"));
+		
+		
 	}
 	
 }

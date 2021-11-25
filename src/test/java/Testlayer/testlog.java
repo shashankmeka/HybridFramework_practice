@@ -1,6 +1,5 @@
 package Testlayer;
 
-import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -29,13 +28,14 @@ public class testlog extends baseclass{
 		log.button();
 		log.validatepageTitle();
 		
+		
 	}
 	
 	@AfterClass
 	public void teardown() throws InterruptedException {
 		
-		Thread.sleep(2000);
-//		driver.close();
+		Thread.sleep(6000);
+		driver.close();
 		
 	}
 	

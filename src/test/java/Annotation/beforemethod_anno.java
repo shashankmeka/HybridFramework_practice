@@ -57,7 +57,7 @@ public class beforemethod_anno{
 	@AfterMethod
 	public void close()
 	{
-//		driver.close();
+		driver.close();
 	}
 	
 	
